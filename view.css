@@ -51,7 +51,7 @@ body
 
 form.appnitro
 {
-	margin: 1px 0px 0;
+	margin: 0px 0px 0;
 	padding:0 0 10px;
 }
 
@@ -303,14 +303,14 @@ form .section_break p
 input.button_text
 {
 	overflow:visible;
-	padding:0 7px;
+	padding:0 0px;
 	width:auto;
 }
 
 .buttons input
 {
 	font-size:120%;
-	margin-right:5px;
+	margin-right:0px;
 }
 
 /**** Inputs and Labels ****/
