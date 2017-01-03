@@ -9,6 +9,11 @@
 </head>
 <body id="main_body" >
 	<div id="form_container">
+
+	<img src="top.png" style="width:286px;height:10px;margin-bottom:1px">
+	<h1 style="Text-Align:Center">Lyrical Creator</h1>
+	<img src="bottom.png" style="width:286px;height:10px;margin-top:1px">
+
 	<form id="form_1711" class="appnitro" method="post" action="">
 		<ul>
 		<li id="li_1" >
@@ -21,11 +26,55 @@
 		<div>
 			<textarea id="%Lyrics%" name="Song lyrics" class="element textarea medium"></textarea>
 		</div>
+		<input style="width:279px" type="button" value="Create lyrics documents" onmouseup="writeData()">
+			<script>
+			window.writeData = function()
+			{
+				 var vFormInfo = {};
+
+				 var vLyricsNode = document.getElementById("%Lyrics%");
+				 var vSongNameNode = document.getElementById("%SongName%");
+
+				 // Ensure all forms have been filled in.
+				 if (vLyricsNode.value.length === 0 || !vLyricsNode.value.trim())
+				 {
+					window.alert('"' + vLyricsNode.name + '" must not be empty.');
+					return;
+				 }
+				 if (vSongNameNode.value.length === 0 || !vSongNameNode.value.trim())
+				 {
+					window.alert('"' + vSongNameNode.name + '" must not be empty.');
+					return;
+				 }
+
+				 vFormInfo[vSongNameNode.id] = vSongNameNode.value;
+				 vFormInfo[vLyricsNode.id] = vLyricsNode.value;
+
+				 google.script.run.withSuccessHandler(OnSuccess)
+					.withFailureHandler(onFailure)
+					.CreateLyricsDocs(JSON.stringify(vFormInfo));
+			};
+
+			function OnSuccess(sDocUrl)
+			{
+				var bOpenDoc = window.confirm("Successfully created lyrical document.\r\n\r\n Do you want to open this document?");
+				if (bOpenDoc)
+					window.open(sDocUrl, "_blank")
+			}
+
+			function onFailure(vError)
+			{
+				 // Lyrics docs creation failed.
+				 window.alert("Error: " + vError.message);
+			}
+			</script>
 		</li>
 		</ul>
 		</form>
 
-		<img src="bottom.png" style="width:286px;height:10px;margin:6px">
+		<img src="top.png" style="width:286px;height:10px;margin-bottom:1px">
+		<h1 style="Text-Align:Center">Bulletin Creator</h1>
+		<img src="bottom.png" style="width:286px;height:10px;margin-top:1px">
 
 		<form id="form_1710" class="appnitro" method="post" action="">
 		<ul>
@@ -116,7 +165,7 @@
 	</body>
 <body>
          <base target="_top">
-          <input type="button" value="Create bulletin (this may take awhile)" onmouseup="writeData()">
+          <input style="width:279px" type="button" value="Create bulletin (this may take awhile)" onmouseup="writeData()">
           <script>
           window.writeData = function()
           {
