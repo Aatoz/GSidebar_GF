@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+    
+    <style>
+      .table > tbody > tr > td {
+        background-color:red;
+      }
+    </style>
+</head>
+
+<body>
+	<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Bill</th>
+
+					<th>Purpose</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td id="chaseRow1">
+						<a class="btn" href="www.chase.com" id="chaseBtn" target="_blank">&#x2717; Chase</a>
+					</td>
+
+					<td id="chaseRow2">Credit Card</td>
+				</tr>
+
+				<tr>
+					<td id="discoverRow1">
+						<a class="btn" href="https://www.discovercard.com" id="discoverBtn" target="_blank">&#x2717; Discover</a>
+					</td>
+
+					<td id="discoverRow2">Credit Card</td>
+				</tr>
+
+				<tr>
+					<td id="amazonStoreRow1">
+						<a class="btn" href="https://www.synchronycredit.com/eSecurity/Login/login.action?clientId=amazon&accountType=plcc&langId=en" id="amazonStoreBtn" target="_blank">&#x2717; Amazon Store</a>
+					</td>
+
+					<td id="amazonStoreRow2">Credit Card</td>
+				</tr>
+
+				<tr>
+					<td id="jaredRow1">
+						<a class="btn" href="http://www.jared.com/MyAccountHomeView?langId=-1&storeId=10451&catalogId=10001&errorViewName=LogonForm" id="jaredBtn" target="_blank">&#x2717; Jared</a>
+					</td>
+
+					<td id="jaredRow2">Engagement Ring</td>
+				</tr>
+
+				<tr>
+					<td id="aptRow1">
+                      <a class="btn" href="https://online.hometrustbanking.com" id="aptBtn" target="_blank">&#x2717; Apartment (Transfer)</a>
+                    </td>
+
+					<td id="aptRow2">Monthly Rent</td>
+				</tr>
+
+				<tr>
+					<td id="danvilleUtilRow1">
+                      <a class="btn" href="https://online.hometrustbanking.com" id="danvilleUtilBtn" target="_blank">&#x2717; Danville Utilities (Transfer)</a>
+                    </td>
+
+					<td id="danvilleUtilRow2">Monthly Rent</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+<script>
+  $('#chaseBtn').on('click', function(event) {
+    $('#chaseRow1').html("&#x2713; Chase");
+
+    $('#chaseRow1').attr("style", "background-color:green");
+    $('#chaseRow2').attr("style", "background-color:green");
+  });
+
+  $('#discoverBtn').on('click', function(event) {
+    $('#discoverRow1').html("&#x2713; Discover");
+
+    $('#discoverRow1').attr("style", "background-color:green");
+    $('#discoverRow2').attr("style", "background-color:green");
+  });
+
+  $('#amazonStoreBtn').on('click', function(event) {
+    $('#amazonStoreRow1').html("&#x2713; Amazon Store");
+
+    $('#amazonStoreRow1').attr("style", "background-color:green");
+    $('#amazonStoreRow2').attr("style", "background-color:green");
+  });
+
+  $('#jaredBtn').on('click', function(event) {
+    $('#jaredRow1').html("&#x2713; Jared");
+
+    $('#jaredRow1').attr("style", "background-color:green");
+    $('#jaredRow2').attr("style", "background-color:green");
+  });
+
+  $('#aptBtn').on('click', function(event) {
+    $('#aptRow1').html("&#x2713; Apartment (Transfer)");
+
+    $('#aptRow1').attr("style", "background-color:green");
+    $('#aptRow2').attr("style", "background-color:green");
+  });
+
+  $('#danvilleUtilBtn').on('click', function(event) {
+    $('#danvilleUtilRow1').html("&#x2713; Danville Utilities (Transfer)");
+
+    $('#danvilleUtilRow1').attr("style", "background-color:green");
+    $('#danvilleUtilRow2').attr("style", "background-color:green");
+  });
+</script>
+
+</html>
