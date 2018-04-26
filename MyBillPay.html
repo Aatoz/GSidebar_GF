@@ -14,6 +14,40 @@
     <style>
       .table > tbody > tr > td {
         background-color:red;
+        border-color: #2a2a2a;
+      }
+      
+      body {
+         color: #dadada;
+         background-color: #353535;
+      }
+      
+      .btn {
+         display: inline-block;
+         color: #dadada;
+         padding: 2px 6px 3px;
+         background-color: #f5f5f5 !important;
+         background-image: -moz-linear-gradient(top, black, #4F5964);
+         background-image: -ms-linear-gradient(top, black, #4F5964);
+         background-image: -webkit-linear-gradient(top, black, #152f4c);
+         background-image: -o-linear-gradient(top, black, #4F5964);
+         background-image: linear-gradient(top, black, #4F5964);
+         background-repeat: repeat-x;
+         border-color: #4F5964 #4F5964 #bfbfbf;
+         border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+         border: 1px solid #ccc;
+         border-bottom-color: #bbb;
+         -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+         -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+         cursor: pointer;
+         filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+      }
+      
+      .btn:hover, .btn:focus {
+         color: #dadada !important;
+         background: #0074a9 !important;
+	      outline: none;
       }
     </style>
 </head>
@@ -52,14 +86,6 @@
 					</td>
 
 					<td id="amazonStoreRow2">Credit Card</td>
-				</tr>
-
-				<tr>
-					<td id="jaredRow1">
-						<a class="btn" href="https://d.comenity.net/jared/sec/payments/Payments.xhtml" id="jaredBtn" target="_blank">&#x2717; Jared</a>
-					</td>
-
-					<td id="jaredRow2">Engagement Ring</td>
 				</tr>
 
 				<tr>
@@ -102,13 +128,6 @@
 
     $('#amazonStoreRow1').attr("style", "background-color:green");
     $('#amazonStoreRow2').attr("style", "background-color:green");
-  });
-
-  $('#jaredBtn').on('click', function(event) {
-    $('#jaredRow1').html("&#x2713; Jared");
-
-    $('#jaredRow1').attr("style", "background-color:green");
-    $('#jaredRow2').attr("style", "background-color:green");
   });
 
   $('#aptBtn').on('click', function(event) {
