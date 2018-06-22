@@ -72,6 +72,13 @@
 					<td id="chaseRow2">Credit Card</td>
 				</tr>
 
+					<td id="citiRow1">
+						<a class="btn" href="https://www.citi.com/credit-cards/citi.action" id="citiBtn" target="_blank">&#x2717; Citi Double Cash</a>
+					</td>
+
+					<td id="citiRow2">Credit Card</td>
+				</tr>
+
 				<tr>
 					<td id="discoverRow1">
 						<a class="btn" href="https://www.discovercard.com" id="discoverBtn" target="_blank">&#x2717; Discover</a>
@@ -138,6 +145,13 @@
 
 		$('#chaseRow1').attr("style", "background-color:green");
 		$('#chaseRow2').attr("style", "background-color:green");
+	});
+
+	$('#citiBtn').on('click', function(event) {
+		$('#citiRow1').html("&#x2713; Citi Double Cash");
+
+		$('#citiRow1').attr("style", "background-color:green");
+		$('#citiRow2').attr("style", "background-color:green");
 	});
 
 	$('#discoverBtn').on('click', function(event) {
