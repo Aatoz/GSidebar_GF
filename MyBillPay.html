@@ -58,81 +58,99 @@
 			<thead>
 				<tr>
 					<th>Bill</th>
-
 					<th>Purpose</th>
+					<th>Due Date</th>
 				</tr>
 			</thead>
 
 			<tbody>
 				<tr>
-					<td id="chaseRow1">
-						<a class="btn" href="https://www.chase.com/" id="chaseBtn" target="_blank">&#x2717; Chase</a>
+					<td id="chaseCol1">
+						<a class="btn" href="https://www.chase.com/" id="chaseBtn" target="_blank">&#x2717; Chase & Chase Freedom</a>
 					</td>
 
-					<td id="chaseRow2">Credit Card</td>
+					<td id="chaseCol2">Credit Card</td>
+					<td id="chaseCol3">5th</td>
 				</tr>
 
-					<td id="citiRow1">
+					<td id="citiCol1">
 						<a class="btn" href="https://www.citi.com/credit-cards/citi.action" id="citiBtn" target="_blank">&#x2717; Citi Double Cash</a>
 					</td>
 
-					<td id="citiRow2">Credit Card</td>
+					<td id="citiCol2">Credit Card</td>
+					<td id="citiCol3">28th</td>
 				</tr>
 
 				<tr>
-					<td id="discoverRow1">
+					<td id="discoverCol1">
 						<a class="btn" href="https://www.discovercard.com" id="discoverBtn" target="_blank">&#x2717; Discover</a>
 					</td>
 
-					<td id="discoverRow2">Credit Card</td>
+					<td id="discoverCol2">Credit Card</td>
+					<td id="discoverCol3">28th</td>
 				</tr>
 
 				<tr>
-					<td id="amazonStoreRow1">
+					<td id="amazonStoreCol1">
 						<a class="btn" href="https://www.synchronycredit.com/eSecurity/Login/login.action?clientId=amazon&accountType=plcc&langId=en" id="amazonStoreBtn" target="_blank">&#x2717; Amazon Store</a>
 					</td>
 
-					<td id="amazonStoreRow2">Credit Card</td>
+					<td id="amazonStoreCol2">Credit Card</td>
+					<td id="amazonStoreCol3">28th</td>
 				</tr>
-			
+
 				<tr>
-					<td id="homeDepotRow1">
+					<td id="homeDepotCol1">
 						<a class="btn" href="https://citiretailservices.citibankonline.com/RSnextgen/svc/launch/index.action?siteId=PLCN_HOMEDEPOT&desc=EMCP48ZD01ZZ&cmp=AEL_EMCP48ZD01ZZ#signon" id="homeDepotBtn" target="_blank">&#x2717; Home Depot</a>
 					</td>
 
-					<td id="homeDepotRow2">Credit Card</td>
+					<td id="homeDepotCol2">Credit Card</td>
+					<td id="homeDepotCol3">28th</td>
 				</tr>
-			
+
 				<tr>
-					<td id="aeRow1">
+					<td id="wayfairCol1">
+						<a class="btn" href="https://d.comenity.net/wayfaircard/" id="wayfairBtn" target="_blank">&#x2717; Wayfair</a>
+					</td>
+
+					<td id="wayfairCol2">Credit Card</td>
+					<td id="wayfairCol3">?</td>
+				</tr>
+
+				<tr>
+					<td id="aeCol1">
 						<a class="btn" href="https://www.synchronycredit.com/eSecurity/Login/login.action?clientId=aeoutfitters&accountType=generic&langId=en" id="aeBtn" target="_blank">&#x2717; American Eagle</a>
 					</td>
 
-					<td id="aeRow2">Credit Card</td>
+					<td id="aeCol2">Credit Card</td>
+					<td id="aeCol3">14th</td>
 				</tr>
-			
+
 				<tr>
-					<td id="buckleRow1">
+					<td id="buckleCol1">
 						<a class="btn" href="https://c.comenity.net/buckle/pub/signin/SignIn.xhtml" id="buckleBtn" target="_blank">&#x2717; Buckle</a>
 					</td>
 
-					<td id="buckleRow2">Credit Card</td>
+					<td id="buckleCol2">Credit Card</td>
+					<td id="buckleCol3">10th</td>
 				</tr>
 
 				<tr>
-					<td id="danvilleUtilRow1">
+					<td id="danvilleUtilCol1">
 					<a class="btn" href="https://danvilleutilities.com/app/login.jsp" id="danvilleUtilBtn" target="_blank">&#x2717; Danville Utilities</a>
 					</td>
 
-					<td id="danvilleUtilRow2">Monthly Rent</td>
+					<td id="danvilleUtilCol2">Water / Sewer & Waste</td>
+					<td id="danvilleUtilCol3">14th</td>
 				</tr>
 
 				<tr>
-					<td id="mortgageRow1">
+					<td id="mortgageCol1">
 					<a class="btn" href="https://www.yourmortgageonline.com/Home/Index" id="mortgageBtn" target="_blank">&#x2717; Home Mortgage</a>
 					</td>
 
-					<td id="mortgageRow2">Monthly Rent</td>
+					<td id="mortgageCol2">Monthly Rent</td>
+					<td id="mortgageCol3">28th</td>
 				</tr>
 			</tbody>
 		</table>
@@ -141,66 +159,83 @@
 
 <script>
 	$('#chaseBtn').on('click', function(event) {
-		$('#chaseRow1').html("&#x2713; Chase");
+		$('#chaseCol1').html("&#x2713; Chase & Chase Freedom");
 
-		$('#chaseRow1').attr("style", "background-color:green");
-		$('#chaseRow2').attr("style", "background-color:green");
+		$('#chaseCol1').attr("style", "background-color:green");
+		$('#chaseCol2').attr("style", "background-color:green");
+		$('#chaseCol3').attr("style", "background-color:green");
 	});
 
 	$('#citiBtn').on('click', function(event) {
-		$('#citiRow1').html("&#x2713; Citi Double Cash");
+		$('#citiCol1').html("&#x2713; Citi Double Cash");
 
-		$('#citiRow1').attr("style", "background-color:green");
-		$('#citiRow2').attr("style", "background-color:green");
+		$('#citiCol1').attr("style", "background-color:green");
+		$('#citiCol2').attr("style", "background-color:green");
+		$('#citiCol3').attr("style", "background-color:green");
 	});
 
 	$('#discoverBtn').on('click', function(event) {
-		$('#discoverRow1').html("&#x2713; Discover");
+		$('#discoverCol1').html("&#x2713; Discover");
 
-		$('#discoverRow1').attr("style", "background-color:green");
-		$('#discoverRow2').attr("style", "background-color:green");
+		$('#discoverCol1').attr("style", "background-color:green");
+		$('#discoverCol2').attr("style", "background-color:green");
+		$('#discoverCol3').attr("style", "background-color:green");
 	});
 
 	$('#amazonStoreBtn').on('click', function(event) {
-		$('#amazonStoreRow1').html("&#x2713; Amazon Store");
+		$('#amazonStoreCol1').html("&#x2713; Amazon Store");
 
-		$('#amazonStoreRow1').attr("style", "background-color:green");
-		$('#amazonStoreRow2').attr("style", "background-color:green");
+		$('#amazonStoreCol1').attr("style", "background-color:green");
+		$('#amazonStoreCol2').attr("style", "background-color:green");
+		$('#amazonStoreCol3').attr("style", "background-color:green");
 	});
-	
+
 	$('#homeDepotBtn').on('click', function(event) {
-		$('#homeDepotRow1').html("&#x2713; Home Depot");
+		$('#homeDepotCol1').html("&#x2713; Home Depot");
 
-		$('#homeDepotRow1').attr("style", "background-color:green");
-		$('#homeDepotRow2').attr("style", "background-color:green");
+		$('#homeDepotCol1').attr("style", "background-color:green");
+		$('#homeDepotCol2').attr("style", "background-color:green");
+		$('#homeDepotCol3').attr("style", "background-color:green");
 	});
-	
-	$('#aeBtn').on('click', function(event) {
-		$('#aeRow1').html("&#x2713; American Eagle");
 
-		$('#aeRow1').attr("style", "background-color:green");
-		$('#aeRow2').attr("style", "background-color:green");
+	$('#wayfairBtn').on('click', function(event) {
+		$('#wayfairCol1').html("&#x2713; Wayfair");
+
+		$('#wayfairCol1').attr("style", "background-color:green");
+		$('#wayfairCol2').attr("style", "background-color:green");
+		$('#wayfairCol3').attr("style", "background-color:green");
+	});
+
+	$('#aeBtn').on('click', function(event) {
+		$('#aeCol1').html("&#x2713; American Eagle");
+
+		$('#aeCol1').attr("style", "background-color:green");
+		$('#aeCol2').attr("style", "background-color:green");
+		$('#aeCol3').attr("style", "background-color:green");
 	});
 	
 	$('#buckleBtn').on('click', function(event) {
-		$('#buckleRow1').html("&#x2713; Buckle");
+		$('#buckleCol1').html("&#x2713; Buckle");
 
-		$('#buckleRow1').attr("style", "background-color:green");
-		$('#buckleRow2').attr("style", "background-color:green");
+		$('#buckleCol1').attr("style", "background-color:green");
+		$('#buckleCol2').attr("style", "background-color:green");
+		$('#buckleCol3').attr("style", "background-color:green");
 	});
 
 	$('#danvilleUtilBtn').on('click', function(event) {
-		$('#danvilleUtilRow1').html("&#x2713; Danville Utilities");
+		$('#danvilleUtilCol1').html("&#x2713; Danville Utilities");
 
-		$('#danvilleUtilRow1').attr("style", "background-color:green");
-		$('#danvilleUtilRow2').attr("style", "background-color:green");
+		$('#danvilleUtilCol1').attr("style", "background-color:green");
+		$('#danvilleUtilCol2').attr("style", "background-color:green");
+		$('#danvilleUtilCol3').attr("style", "background-color:green");
 	});
 
 	$('#mortgageBtn').on('click', function(event) {
-		$('#mortgageRow1').html("&#x2713; Home Mortgage");
+		$('#mortgageCol1').html("&#x2713; Home Mortgage");
 
-		$('#mortgageRow1').attr("style", "background-color:green");
-		$('#mortgageRow2').attr("style", "background-color:green");
+		$('#mortgageCol1').attr("style", "background-color:green");
+		$('#mortgageCol2').attr("style", "background-color:green");
+		$('#mortgageCol3').attr("style", "background-color:green");
 	});
 </script>
 
