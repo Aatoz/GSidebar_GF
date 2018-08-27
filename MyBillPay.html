@@ -118,6 +118,15 @@
 				</tr>
 
 				<tr>
+					<td id="jaredCol1">
+						<a class="btn" href="https://c.comenity.net/jared/sec/AccountSummary.xhtml" id="jaredBtn" target="_blank">&#x2717; Jared</a>
+					</td>
+
+					<td id="jaredCol2">Credit Card</td>
+					<td id="jaredCol3">6th</td>
+				</tr>
+
+				<tr>
 					<td id="aeCol1">
 						<a class="btn" href="https://www.synchronycredit.com/eSecurity/Login/login.action?clientId=aeoutfitters&accountType=generic&langId=en" id="aeBtn" target="_blank">&#x2717; American Eagle</a>
 					</td>
@@ -204,6 +213,14 @@
 		$('#wayfairCol1').attr("style", "background-color:green");
 		$('#wayfairCol2').attr("style", "background-color:green");
 		$('#wayfairCol3').attr("style", "background-color:green");
+	});
+
+	$('#jaredBtn').on('click', function(event) {
+		$('#jaredCol1').html("&#x2713; Jared");
+
+		$('#jaredCol1').attr("style", "background-color:green");
+		$('#jaredCol2').attr("style", "background-color:green");
+		$('#jaredCol3').attr("style", "background-color:green");
 	});
 
 	$('#aeBtn').on('click', function(event) {
