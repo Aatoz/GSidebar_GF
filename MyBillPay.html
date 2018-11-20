@@ -154,6 +154,15 @@
 				</tr>
 
 				<tr>
+					<td id="DCUCol1">
+					<a class="btn" href="https://www.dcu-online.org/tob/live/usp-core/app/home" id="DCUBtn" target="_blank">&#x2717; Solar Loan</a>
+					</td>
+
+					<td id="DCUCol2">Monthly Loan Payment</td>
+					<td id="DCUCol3">23rd</td>
+				</tr>
+
+				<tr>
 					<td id="mortgageCol1">
 					<a class="btn" href="https://www.yourmortgageonline.com/Home/Index" id="mortgageBtn" target="_blank">&#x2717; Home Mortgage</a>
 					</td>
@@ -245,6 +254,14 @@
 		$('#danvilleUtilCol1').attr("style", "background-color:green");
 		$('#danvilleUtilCol2').attr("style", "background-color:green");
 		$('#danvilleUtilCol3').attr("style", "background-color:green");
+	});
+
+	$('#DCUBtn').on('click', function(event) {
+		$('#DCUCol1').html("&#x2713; Solar Loan");
+
+		$('#DCUCol1').attr("style", "background-color:green");
+		$('#DCUCol2').attr("style", "background-color:green");
+		$('#DCUCol3').attr("style", "background-color:green");
 	});
 
 	$('#mortgageBtn').on('click', function(event) {
